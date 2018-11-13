@@ -34,7 +34,7 @@ if you run your program tomorrow, it should give you 2=r
 	
 	wordsToWeekDays(word,2);
 	
-	
+	input.close();
 }
 
 public static String wordsToWeekDays(String word,int day) {
@@ -98,4 +98,5 @@ public static String wordsToWeekDays(String word,int day) {
 	
 	return dayOfWeek;
 }
+
 }
