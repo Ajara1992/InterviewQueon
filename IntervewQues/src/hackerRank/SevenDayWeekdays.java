@@ -42,7 +42,7 @@ public static String wordsToWeekDays(String word,int day) {
 	int num=7;
 	int len=word.length();
 	int nnm=0;
-	int wdays []= {1,2,3,4,5,6,7};
+	
 	String dayOfWeek="";
 	String toStr="";
 	String conToStr="";
