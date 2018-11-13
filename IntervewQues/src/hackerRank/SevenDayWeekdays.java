@@ -2,6 +2,7 @@ package hackerRank;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,8 +32,10 @@ if you run your program tomorrow, it should give you 2=r
 	if(!(word.matches("[a-zA-Z]+"))) {//only for letters
 	System.out.println("Please input only letters");
 }
-	
-	wordsToWeekDays(word,2);
+	Calendar d= Calendar.getInstance();
+	d.setTime(d.getTime());
+	int dayOfWeek= d.get(Calendar.DAY_OF_WEEK);
+	wordsToWeekDays(word,dayOfWeek);
 	
 	input.close();
 }
