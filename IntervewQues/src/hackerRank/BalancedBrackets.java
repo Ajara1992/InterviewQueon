@@ -33,13 +33,13 @@ public class BalancedBrackets {
 	/////
 	 
 	 if(chr.size()%2!=0) {
-	         System.out.println("N-O");
+	         System.out.println("NO");
 	       
 	     }
 	 
 	 else {
 	 if(!areParenthesisBalanced(chr)){
-		 System.out.println("no9");
+		 System.out.println("NO");
 	 } 
 	 
 	 
@@ -48,11 +48,11 @@ public class BalancedBrackets {
 	     for (int k=0;k<chr.size();k++) {               
 	       
 	       
-	          System.out.println(chr.get(k));
+	          //System.out.println(chr.get(k));
 	         
 	         if(chr.get(k)=='{'&& chr.contains('}')) {
 	        	
-	             System.out.println("1");
+	             
 	        	 chr.remove(Character.valueOf('{'));
 	              
 	             chr.remove(Character.valueOf('}'));
@@ -62,7 +62,7 @@ public class BalancedBrackets {
 	        
 	        
 	         else if(chr.get(k)=='(' && chr.contains(')')){
-	        	 System.out.println("2");
+	        	 
 	        	     chr.remove(Character.valueOf('('));
 	            	 chr.remove(Character.valueOf(')'));
 	            	 k--;
@@ -72,7 +72,7 @@ public class BalancedBrackets {
 	         else if(chr.get(k)=='[' && chr.contains(']')){
 	        	     chr.remove(Character.valueOf('['));
 	            	 chr.remove(Character.valueOf(']'));
-	            	 System.out.println("3");
+	            	 
 	            	k--;
 	         }
 	         
@@ -86,8 +86,8 @@ public class BalancedBrackets {
 		     }
 	    
 	      if(chr.size()!=0) {
-	        res="N+O";
-	        System.out.println("n=o");
+	        res="NO";
+	        System.out.println("no");
 	        System.out.println(chr.size());
 	       
 	     }
