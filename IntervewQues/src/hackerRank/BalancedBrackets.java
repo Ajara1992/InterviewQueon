@@ -26,9 +26,9 @@ public class BalancedBrackets {
 		    chr.add(c);
 		    unique.add(c);
 		}
-	  System.out.println(chr.size());
-	  System.out.println(chr);
-	  System.out.println(chr.get(0));
+	 // System.out.println(chr.size());
+	 // System.out.println(chr);
+	 // System.out.println(chr.get(0));
 
 	/////
 	 
